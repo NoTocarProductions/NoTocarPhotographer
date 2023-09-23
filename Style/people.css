@@ -649,6 +649,16 @@ footer {
     color: hsl(0, 0%, 90%);
 }
 
+
+#footerDesign p a {
+  text-decoration: none;
+  color: hsl(194, 21%, 60%);
+  cursor: pointer;
+}
+#footerDesign p a:hover {
+  text-decoration: underline;
+}
+
 #footerCenterChildBottom a:hover {
   border: 2px solid hsl(194, 21%, 60%);
   opacity: 0.8;
