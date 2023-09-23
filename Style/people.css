@@ -542,7 +542,7 @@ h1.contactTitleSeries {
   height: 100%;
   border: 2px solid grey;
   border-radius: 20px;
-  background-image: url('img/gaut.jpg');
+  background-image: url('/Style/img/gaut.jpg');
   background-position: center;
   background-size: cover;
 }
