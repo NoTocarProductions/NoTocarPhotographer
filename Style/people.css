@@ -114,6 +114,102 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  div.containerTitle h1 {
+    font-size: 36px;
+  }
+  
+  div.containerAbout {
+    display: block;
+    width: 100%;
+  }
+
+  div.containerTitle h1 {
+    font-size: 36px;
+  }
+
+  div.containerAbout,
+  div.leftSide,
+  div.rightSide {
+    width: 100%;
+  }
+
+  div.leftSideTitle,
+  div.leftSidePicture,
+  div.textRight {
+    width: 100%;
+    margin: 0; /* Remove any margin for mobile layout */
+  }
+
+  div.leftSideTitle h1 {
+    font-size: 36px;
+    font-family: DM sans Serif;
+    text-align: center; /* Center the text */
+  }
+
+  div.leftSidePicture {
+    margin: 20px auto;
+    height: 200px;
+    background-image: url('/Style/img/gaut.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid grey;
+    border-radius: 20px;
+  }
+
+  div.textRight {
+    font-size: 16px; /* Increase font size for better readability on mobile */
+  }
+  
+  div.containerAbout span {
+    display: block;
+    margin-bottom: 10px; /* Add spacing between spans */
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+  }
+
+  div.fullWidthContainerFooter {
+    grid-template-columns: 1fr;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 400px; /* Add a max-width to constrain the footer width */
+    margin: auto;
+  }
+
+  div#footerCopyright {
+    display: none;
+  }
+
+  div#footerCenter {
+    grid-template-rows: 1fr 1fr 1fr; /* Adjust the grid rows for mobile */
+  }
+
+  div#footerCenterChild p {
+    font-size: 20px; /* Decrease the font size for mobile */
+    padding: 16px 12px; /* Adjust padding for mobile */
+    border-radius: 12px; /* Adjust border radius for mobile */
+    margin: -80px 0px -40px 0px;
+  }
+
+  div#footerCenterChildBottom {
+    flex-direction: column; /* Stack links vertically on mobile */
+    align-items: center;
+  }
+
+  div#footerCenterChildBottom a {
+    margin: 8px 0; /* Add spacing between links for mobile */
+  }
+
+  div#footerDesign {
+    justify-content: left; /* Align the text to the left for mobile */
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
+  
+
 .appear {
   animation-duration: 6s;
   animation-name: appearOnLoad;
@@ -542,7 +638,7 @@ h1.contactTitleSeries {
   height: 100%;
   border: 2px solid grey;
   border-radius: 20px;
-  background-image: url('Style/img/gaut.jpg');
+  background-image: url('/Style/img/gaut.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -649,7 +745,6 @@ footer {
     color: hsl(0, 0%, 90%);
 }
 
-
 #footerDesign p a {
   text-decoration: none;
   color: hsl(194, 21%, 60%);
@@ -658,7 +753,6 @@ footer {
 #footerDesign p a:hover {
   text-decoration: underline;
 }
-
 #footerCenterChildBottom a:hover {
   border: 2px solid hsl(194, 21%, 60%);
   opacity: 0.8;
@@ -673,7 +767,16 @@ footer {
   opacity: 0.8;
 }
 
-
+.containerContact {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+  height: auto;
+  margin: 100px auto;
+  border-radius: 60px;
+}
 
 
 
