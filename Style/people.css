@@ -115,6 +115,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  div.navbarContainer a:nth-child(2) {
+    display: none;
+  }
   div.containerTitle h1 {
     font-size: 36px;
   }
@@ -165,6 +168,15 @@
     display: block;
     margin-bottom: 10px; /* Add spacing between spans */
   }
+  div.containerText {
+    height: auto;
+  }
+  div.containerTextBox {
+    font-size: 16px;
+  }
+  div.containerSmall {
+    /* margin-top: 100px; */
+  }
 
   /* FOOTER */
   footer {
@@ -206,6 +218,10 @@
     justify-content: left; /* Align the text to the left for mobile */
     font-size: 10px;
     margin-top: 20px;
+  }
+
+  div.navbarContainer h2#name {
+    font-size: 18px;
   }
 }
   
@@ -781,69 +797,3 @@ footer {
 
 
 
-
-/* .container {
-    height: 100%;
-    display: flex;
-}
-
-.secondContainer {
-display: flex;
-flex-wrap: nowrap;
-flex-direction: column;
-flex-grow: 1 1 auto;
-gap: 10%;
-width: 75%;
-background-color: rgba(0, 0, 0, 0.951);
-margin: 100px auto;
-border-radius: 60px;
-overflow: hidden;
-}
-
-.showcaseContainer {
-    margin: auto;
-    width: 100%;
-    height: 700px;
-}
-
-.showcaseContainer h1 {
-    margin: 6% auto;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0px;
-    font-size: 72px;
-    color: hsl(194, 21%, 40%);
-    position: fixed;
-}
-
-.photoShowcase {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 5;
-    margin: 25% 0% 0% 0%;
-    border-radius: 50px;
-    background-image: url('https://source.unsplash.com/1600x900/?people');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.explanationContainer {
-    width: 60%;
-    height: 100px;
-    background-color: white;
-    position: relative;
-    margin: auto;
-}
-
-.gridContainer {
-    position: relative;
-    display: grid;
-    grid-auto-columns: auto;
-    gap: 300px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.951);
-    margin: 0px auto;
-} */
