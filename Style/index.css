@@ -90,6 +90,10 @@
   }
   div.flipped p {
     font-size: 12px;
+    margin: auto;
+  }  
+  div.flip p {
+    margin: auto;
   }
   div.containerSeriesBoxOne, div.containerSeriesBoxTwo {
     position: relative;
@@ -103,10 +107,18 @@
   div.boxRight {
     grid-column: 1;
     grid-row: 2;
+    height: 100%;
   }
   div.flip, div.flipped {
     grid-column: 1;
     grid-row: 1;
+    place-items: center;
+    height: 100%;
+  }
+
+  
+  div.navbarContainer h2#name {
+    font-size: 18px;
   }
 }
 
